@@ -1,6 +1,8 @@
 *.class
 
 # Idea's Files #
+.gradle
+.idea
 *.iml
 
 # Package Files #
