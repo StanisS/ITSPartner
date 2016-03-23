@@ -1,9 +1,12 @@
 *.class
 
 # Idea's Files #
-.gradle
 .idea
 *.iml
+
+# Gradle Files #
+.gradle
+*/build
 
 # Package Files #
 *.jar
