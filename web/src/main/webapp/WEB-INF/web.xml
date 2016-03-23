@@ -3,7 +3,7 @@
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
-    <display-name>ITS Partner Test</display-name>
+    <display-name>A Simple Web Application</display-name>
 
     <!-- For web context -->
     <servlet>

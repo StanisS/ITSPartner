@@ -4,7 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-
+/**
+ * Created by Stepanov_SI
+ */
 @Service
 public class HelloWorldService {
 
@@ -14,7 +16,7 @@ public class HelloWorldService {
 
         logger.debug("getDesc() is executed!");
 
-        return "Gradle + Spring MVC Hello World Example";
+        return "A simple web application";
 
     }
 
@@ -23,7 +25,7 @@ public class HelloWorldService {
         logger.debug("getTitle() is executed! $name : {}", name);
 
         if (StringUtils.isEmpty(name)) {
-            return "Hello World";
+            return "Hello Tester";
         } else {
             return "Hello " + name;
         }

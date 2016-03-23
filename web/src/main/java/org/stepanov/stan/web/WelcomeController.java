@@ -11,7 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 import org.stepanov.stan.service.HelloWorldService;
 
 import java.util.Map;
-
+/**
+ * Created by Stepanov_SI
+ */
 @Controller
 public class WelcomeController {
 

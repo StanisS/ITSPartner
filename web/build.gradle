@@ -4,23 +4,24 @@ apply plugin: 'application'
 apply plugin: 'war'
 apply plugin: 'jetty'
 
-
 mainClassName = 'org.stepanov.stan.MainClass'
 
 dependencies {
-    compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
     compile 'javax.servlet:jstl:1.2'
+    compile project(':user-crud')
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
 jettyRun{
-    contextPath = "spring4"
+    contextPath = ""
     httpPort = 8080
+    stopPort = 9080
 }
 
 jettyRunWar{
-    contextPath = "spring4"
+    contextPath = ""
     httpPort = 8080
+    stopPort = 9080
 }
 
