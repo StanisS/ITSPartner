@@ -37,19 +37,11 @@ public class WelcomeController {
         return "index";
     }
 
-    @RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
-    public ModelAndView hello(@PathVariable("name") String name) {
+    @RequestMapping(value = "/userList", method = RequestMethod.GET)
+    public String userList() {
 
-        logger.debug("hello() is executed - $name {}", name);
+        logger.debug("userList() is executed!");
 
-        ModelAndView model = new ModelAndView();
-        model.setViewName("index");
-
-        model.addObject("title", helloWorldService.getTitle(name));
-        model.addObject("msg", helloWorldService.getDesc());
-
-        return model;
-
+        return "userList";
     }
-
 }
