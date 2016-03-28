@@ -19,7 +19,7 @@
         Welcome Welcome!
     </c:if>
 </p>
-<a href="http://localhost:8080/userList">User List</a>
+<a href="./userList">User List</a>
 
 <hr>
 <footer>

@@ -1,1 +1,3 @@
-include ':web', ':user-crud'
+include ':web'
+include ':user-crud'
+include ':database'
